@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Resident - Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">The Resident</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./lineup.html">Lineup</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="display-5 mb-4 text-center text-uppercase">Contacto</h2>
+            <div class="row">
+                
+                <!-- Formulario de Contacto -->
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Motivo del mensaje" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-light">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto y Redes Sociales -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Información de Contacto</h5>
+                    <p>Ubicación: Buenos Aires, Argentina</p>
+                    <p>Email: <a href="mailto:contact@theresident.com" class="text-white text-decoration-none">contact@theresident.com</a></p>
+                    <p>Teléfono: +54 11 1234 5678</p>
+
+                    <h5 class="text-uppercase mt-4">Síguenos en Redes</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://facebook.com" target="_blank" class="text-white text-decoration-none">Facebook</a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com" target="_blank" class="text-white text-decoration-none">Twitter</a></li>
+                        <li class="list-inline-item"><a href="https://instagram.com" target="_blank" class="text-white text-decoration-none">Instagram</a></li>
+                        <li class="list-inline-item"><a href="https://youtube.com" target="_blank" class="text-white text-decoration-none">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Mensaje Enviado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Gracias por tratar de comunicarte con nosotros. Te estaremos respondiendo pronto.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para mostrar el modal de confirmación
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            var confirmationModal = new bootstrap.Modal(document.getElementById("confirmationModal"));
+            confirmationModal.show();
+        });
+    </script>
+
+</body>
+
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Columna 1: Enlaces útiles -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="./lineup.html" class="text-white text-decoration-none">Lineup</a></li>
+                    <li><a href="./sobre-nosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+                    <li><a href="./galeria.html" class="text-white text-decoration-none">Galería</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Redes Sociales -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Síguenos</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="https://www.facebook.com/groups/creamfieldsargentina/?locale=es_LA" class="text-white text-decoration-none me-3" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/creamfieldsar" class="text-white text-decoration-none me-3" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/creamfieldsargentina/?hl=es-la" class="text-white text-decoration-none me-3" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/creamfields" class="text-white text-decoration-none" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información del Evento -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Información del Evento</h5>
+                <p class="mb-1">Ubicación: Parque de la Ciudad</p>
+                <p class="mb-1">Fecha: 16/11/2024 </p>
+                <p>Contacto: <a class="text-white text-decoration-none">sumalo</a></p>
+            </div>
+        </div>
+
+        <div class="text-center pt-4 border-top border-secondary">
+            <p class="mb-0">© 2024 Fiesta Electrónica. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Resident - Galeria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">The resident</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./lineup.html">Lineup</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Galería en formato Carousel -->
+<section id="gallery" class="gallery py-5 bg-dark text-white">
+    <div class="container">
+        <h2 class="display-5 mb-4 text-center text-uppercase">Galería</h2>
+        
+        <!-- Carousel -->
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               
+                <!-- Imagen 1 -->
+                <div class="carousel-item active">
+                    <img src="../img/galeria4.jpg" class="d-block w-100 rounded" alt="Evento 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Evento 1</h5>
+                        <p>Martin Garrix durante su presentación en Ultra Music Festival 2023, Miami. Conocido por éxitos como "Animals" y "Scared to Be Lonely", ha sido nombrado el DJ número uno por DJ Mag en múltiples ocasiones.</p>
+                    </div>
+                </div>
+               
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                    <img src="../img/galeria5.webp" class="d-block w-100 rounded" alt="Evento 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>armin toca en el nuevo festival de canes</h5>
+                        <p>Armin vuelve a Argentina con su propio armin only
+
+                        </p>
+                    </div>
+                </div>
+               
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                    <img src="../img/galeria6.jpg" class="d-block w-100 rounded" alt="Evento 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Martin garrix explota en el movistar arena</h5>
+                        <p>Segun fuentes de rollings stones, Martin garrix volvera a la argentina</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <!-- Controles del Carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+           
+            <!-- Columna 1: Enlaces útiles -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="./lineup.html" class="text-white text-decoration-none">lineup</a></li>
+                    <li><a href="./sobre-nosotros.html" class="text-white text-decoration-none">sobre nosotros</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Galería</a></li>
+                    <li><a href="./contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Redes Sociales -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Síguenos</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="https://www.facebook.com/groups/creamfieldsargentina/?locale=es_LA" class="text-white text-decoration-none me-3" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/creamfieldsar" class="text-white text-decoration-none me-3" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/creamfieldsargentina/?hl=es-la" class="text-white text-decoration-none me-3" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/user/creamfields" class="text-white text-decoration-none" target="_blank">YouTube</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Información del Evento -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Información del Evento</h5>
+                <p class="mb-1">Ubicación: Parque de la ciudad</p>
+                <p class="mb-1">Fecha: 16/11/2024 </p>
+                <p>Contacto: <a class="text-white text-decoration-none">sumalo</a></p>
+            </div>
+        </div>
+
+        <div class="text-center pt-4 border-top border-secondary">
+            <p class="mb-0">© 2024 Fiesta Electrónica. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
